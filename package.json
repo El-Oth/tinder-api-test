@@ -2,16 +2,12 @@
   "name": "tinder",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "client/src/index.js",
   "scripts": {
-
     "heroku-postbuild": "cd client && npm install && npm run build",
-    "startback" : "nodemon server/index.js",
-    "startfront" : "cd client && npm start",
-
+    "startback": "nodemon server/index.js",
+    "startfront": "cd client && npm start",
     "start": "concurrently \"nodemon server/index\" \"cd client && npm start\""
-
-
   },
   "author": "",
   "license": "ISC",
