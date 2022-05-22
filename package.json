@@ -7,7 +7,7 @@
     "heroku-postbuild": "cd client && npm install && npm run build",
     "startback": "nodemon server/index.js",
     "startfront": "cd client && npm start",
-    "start": "concurrently \"nodemon server/index\" \"cd client && npm start\""
+    "start": "concurrently \"cd client && npm start\" \" nodemon server/index\" "
   },
   "author": "",
   "license": "ISC",
